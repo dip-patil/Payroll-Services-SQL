@@ -1,14 +1,11 @@
 
 CREATE DATABASE payroll_service;
 
-
 SELECT name 
 FROM sys.databases 
 WHERE name = 'payroll_service';
 
 USE payroll_service;
-
-
 
 CREATE TABLE employee_payroll (
     id INT IDENTITY(1,1) PRIMARY KEY,
@@ -35,7 +32,6 @@ WHERE start_date BETWEEN CAST('2018-03-01' AS DATE) AND CAST(GETDATE() AS DATE);
 
 ALTER TABLE employee_payroll
 ADD gender CHAR(1);
-
 
 UPDATE employee_payroll 
 SET gender = 'M' 
