@@ -1,14 +1,11 @@
 
 CREATE DATABASE payroll_service;
 
-
 SELECT name 
 FROM sys.databases 
 WHERE name = 'payroll_service';
 
 USE payroll_service;
-
-
 
 CREATE TABLE employee_payroll (
     id INT IDENTITY(1,1) PRIMARY KEY,
@@ -16,7 +13,6 @@ CREATE TABLE employee_payroll (
     salary DECIMAL(18, 2),
     start_date DATE
 );
-
 
 INSERT INTO employee_payroll (name, salary, start_date) 
 VALUES ('Dip', 50000, '2018-02-01'),
