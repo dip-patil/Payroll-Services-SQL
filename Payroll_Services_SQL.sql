@@ -46,5 +46,19 @@ SET gender = 'F'
 WHERE name = 'Vaibhav';
 
 
+SELECT 
+    gender,
+    SUM(salary) AS total_salary,
+    AVG(salary) AS average_salary,
+    MIN(salary) AS minimum_salary,
+    MAX(salary) AS maximum_salary,
+    COUNT(*) AS employee_count
+FROM 
+    employee_payroll
+GROUP BY 
+    gender;
+
+
+
 
 
