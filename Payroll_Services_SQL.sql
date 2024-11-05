@@ -23,5 +23,6 @@ VALUES ('Dip', 50000, '2018-02-01'),
     ('Prathamesh', 60000, '2019-05-15'),
     ('Vaibhav', 55000, '2020-10-10');
 
+SELECT * FROM employee_payroll;
 
 
