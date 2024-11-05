@@ -33,3 +33,18 @@ SELECT * FROM employee_payroll
 WHERE start_date BETWEEN CAST('2018-03-01' AS DATE) AND CAST(GETDATE() AS DATE);
 
 
+ALTER TABLE employee_payroll
+ADD gender CHAR(1);
+
+
+UPDATE employee_payroll 
+SET gender = 'M' 
+WHERE name = 'Dip' OR name = 'Prathamesh';
+
+UPDATE employee_payroll 
+SET gender = 'F' 
+WHERE name = 'Vaibhav';
+
+
+
+
