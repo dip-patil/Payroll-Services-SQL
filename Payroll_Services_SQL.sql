@@ -8,8 +8,6 @@ WHERE name = 'payroll_service';
 
 USE payroll_service;
 
-
-
 CREATE TABLE employee_payroll (
     id INT IDENTITY(1,1) PRIMARY KEY,
     name NVARCHAR(50),
