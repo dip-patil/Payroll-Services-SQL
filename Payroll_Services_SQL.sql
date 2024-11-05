@@ -26,3 +26,10 @@ VALUES ('Dip', 50000, '2018-02-01'),
 SELECT * FROM employee_payroll;
 
 
+SELECT salary FROM employee_payroll WHERE name = 'Dip';
+
+
+SELECT * FROM employee_payroll
+WHERE start_date BETWEEN CAST('2018-03-01' AS DATE) AND CAST(GETDATE() AS DATE);
+
+
