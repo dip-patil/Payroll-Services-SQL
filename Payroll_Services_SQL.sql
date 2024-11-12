@@ -103,6 +103,43 @@ ADD CONSTRAINT DF_employee_payroll_address DEFAULT 'Not Provided' FOR address;
 ALTER TABLE employee_payroll
 Alter column department NVARCHAR(50) NOT NULL;
 
+--------------UC9----------------------
+
+ALTER TABLE employee_payroll
+ADD 
+    Basic_Pay DECIMAL(18, 2),
+    Deductions DECIMAL(18, 2),
+    Taxable_Pay DECIMAL(18, 2),
+    Income_Tax DECIMAL(18, 2),
+    Net_Pay DECIMAL(18, 2);
+
+
+UPDATE employee_payroll 
+SET 
+    Basic_Pay = 40000,
+    Deductions = 5000,
+    Taxable_Pay = 35000,
+    Income_Tax = 7000,
+    Net_Pay = 28000
+WHERE name = 'Dip';
+
+UPDATE employee_payroll 
+SET 
+    Basic_Pay = 50000,
+    Deductions = 6000,
+    Taxable_Pay = 25000,
+    Income_Tax = 6000,
+    Net_Pay = 18000
+WHERE name = 'Prathamesh';
+
+UPDATE employee_payroll 
+SET 
+    Basic_Pay = 60000,
+    Deductions =4000,
+    Taxable_Pay = 33000,
+    Income_Tax = 7700,
+    Net_Pay = 32000
+WHERE name = 'Vaibhavi';
 
 
 
