@@ -141,5 +141,17 @@ SET
     Net_Pay = 32000
 WHERE name = 'Vaibhavi';
 
+-------------------UC10--------------------
+
+INSERT INTO employee_payroll (name, salary, start_date, phone, address, department, Basic_Pay, Deductions, Taxable_Pay, Income_Tax, Net_Pay, gender)
+VALUES 
+    ('Terissa', 65000, '2023-01-10', '123-456-7890', '456 Market St', 'Sales and Marketing', 50000, 5000, 45000, 9000, 36000, 'F');
+
+
+UPDATE employee_payroll 
+SET 
+    department = 'Sales and Marketing', 
+    salary = 68000
+WHERE name = 'Terissa' AND department = 'Sales and Marketing';
 
 
